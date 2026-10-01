@@ -39,10 +39,7 @@ jobs:
 
       - name: Validate 36-feature inference parity
         run: |
-          python -m src.validation.feature_parity \
-  --sample-size 100 \
-  --project-root .
-
+          python -m src.validation.feature_parity --sample-size 100 --project-root .
 
   docker:
     name: Docker build
