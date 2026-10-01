@@ -1,0 +1,6 @@
+metric,value
+candidate_recall@50,0.241965104746308
+candidate_recall@100,0.30143226106202414
+candidate_recall@200,0.3151872999767862
+users_evaluated,5000.0
+avg_candidates_per_user,125.219

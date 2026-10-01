@@ -1,0 +1,2 @@
+workload,users,total_requests,failures,p50_ms,p95_ms,p99_ms,avg_ms,min_ms,max_ms,current_rps
+cache_hit,10,19437,0,5,12,20,6.4,2,424,75.8

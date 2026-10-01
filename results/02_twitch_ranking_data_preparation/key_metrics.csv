@@ -1,0 +1,10 @@
+metric,value
+train_rows,496140.0
+train_users,20000.0
+train_positive_rate,0.2
+train_repeat_positive_rate,0.5172531946627968
+test_rows,240605.0
+test_users,10000.0
+test_positive_rate,0.2
+test_repeat_positive_rate,0.5486585898048669
+feature_count,36.0

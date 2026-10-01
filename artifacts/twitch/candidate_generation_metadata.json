@@ -1,0 +1,14 @@
+{
+  "evaluation_users": 5000,
+  "cowatch_users": 20000,
+  "max_candidates": 200,
+  "candidate_rows": 626095,
+  "candidate_users": 5000,
+  "scorable_candidate_rows": 7362,
+  "prepared_feature_join_coverage": 0.011758598934666464,
+  "candidate_recall": {
+    "50": 0.241965104746308,
+    "100": 0.30143226106202414,
+    "200": 0.3151872999767862
+  }
+}

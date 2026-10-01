@@ -1,0 +1,11 @@
+metric,value
+n_users,100000.0
+n_streamers,162625.0
+observed_pairs,1505158.0
+possible_interactions,16262500000.0
+density,9.255391237509608e-05
+sparsity,0.9999074460876249
+repeat_pairs,547897.0
+total_pairs,1505158.0
+repeat_percentage,36.40129474779392
+share_top_1_percent,0.5998453993190099

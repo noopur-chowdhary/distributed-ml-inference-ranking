@@ -1,0 +1,9 @@
+model,segment,mean_score,median_score,positive_rows
+Popularity,New streamer,1726.3243572902984,145.0,10658
+Popularity,Repeat streamer,3491.8803849679193,750.0,13092
+Logistic Regression,New streamer,0.3135368705728699,0.1928389858585039,10658
+Logistic Regression,Repeat streamer,0.9958581911231519,0.9996054045661364,13092
+HistGradientBoosting,New streamer,0.5221487768772474,0.5010698516713714,10658
+HistGradientBoosting,Repeat streamer,0.9956392802725466,0.998389273298391,13092
+Neural MLP,New streamer,0.290840423842644,0.136297815,10658
+Neural MLP,Repeat streamer,0.9940963329155209,0.99932217,13092

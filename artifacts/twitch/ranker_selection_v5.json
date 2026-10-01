@@ -1,0 +1,15 @@
+{
+  "selected_ranker": "HistGradientBoosting",
+  "selection_metric": "NDCG@10",
+  "NDCG@10": 0.9615779745970517,
+  "Recall@10": 0.9404777733368014,
+  "fair_comparison_rows": 118750,
+  "fair_comparison_users": 5000,
+  "feature_count": 36,
+  "candidate_v2_features_available": 2,
+  "candidate_v2_features_missing": 34,
+  "test_path": "/Users/noopur/Desktop/resume_projects/Distributed ML Inference & Ranking/data/processed/twitch/twitch_test_ranking.csv.gz",
+  "logreg_path": "/Users/noopur/Desktop/resume_projects/Distributed ML Inference & Ranking/artifacts/twitch/baseline_logistic_regression.joblib",
+  "hgb_path": "/Users/noopur/Desktop/resume_projects/Distributed ML Inference & Ranking/artifacts/twitch/baseline_hist_gradient_boosting.joblib",
+  "neural_prediction_path": "/Users/noopur/Desktop/resume_projects/Distributed ML Inference & Ranking/notebooks/Distributed ML Inference & Ranking/data/processed/twitch/predictions/neural_predictions_mac_subset.csv.gz"
+}

@@ -1,0 +1,42 @@
+Copy the `src` folder into the project root:
+
+Distributed ML Inference & Ranking/
+├── artifacts/
+├── data/
+├── notebooks/
+├── results/
+└── src/
+
+Expected existing Notebook artifacts:
+  artifacts/twitch/hybrid_candidate_retriever.joblib
+  artifacts/twitch/retrieval_pair_history.csv.gz
+  artifacts/twitch/retrieval_streamer_stats.csv.gz
+  artifacts/twitch/candidate_generation_v2_metadata.json
+  artifacts/twitch/baseline_hist_gradient_boosting.joblib
+
+Expected data:
+  data/raw/twitch/100k_a.csv
+  data/processed/twitch/twitch_test_ranking.csv.gz
+
+1) FIRST: validate feature parity
+
+From the project root:
+
+  python -m src.validation.feature_parity --sample-size 500
+
+This builds artifacts/twitch/feature_store_36.joblib on first run, then compares
+the new serving-time feature engine against Notebook 02.
+
+2) THEN: run a local recommendation
+
+  python -m src.inference.engine --user-id 30 --top-k 10
+
+Flow:
+  user_id
+    -> Notebook-05 history + SVD + popularity retriever
+    -> 200 candidates
+    -> exact 36-feature engine
+    -> HGB ranker
+    -> Top 10
+
+Do not add FastAPI/Redis/distributed replicas until feature parity passes.

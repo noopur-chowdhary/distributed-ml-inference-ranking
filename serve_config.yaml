@@ -1,0 +1,11 @@
+proxy_location: EveryNode
+
+http_options:
+  host: 0.0.0.0
+  port: 8000
+
+applications:
+  - name: ranking
+    route_prefix: /
+    import_path: src.distributed.serve_app:serve_app
+    runtime_env: {}

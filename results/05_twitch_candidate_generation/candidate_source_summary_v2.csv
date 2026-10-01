@@ -1,0 +1,8 @@
+candidate_sources,candidate_rows,share
+svd,201510,0.503775
+popularity|svd,107180,0.26795
+popularity,61579,0.1539475
+history,12450,0.031125
+history|svd,9958,0.024895
+history|popularity|svd,7262,0.018155
+history|popularity,61,0.0001525

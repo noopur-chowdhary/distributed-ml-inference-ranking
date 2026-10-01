@@ -1,0 +1,4 @@
+request_type,requests,failures,avg_ms,min_ms,max_ms,p50_ms,p95_ms,p99_ms,req_per_sec
+cache_hit,7058,0,6,2,342,4,10,28,59.31
+cache_miss,1464,0,30,12,2889,21,47,160,12.30
+aggregated,8522,0,10,2,2889,5,25,69,71.62

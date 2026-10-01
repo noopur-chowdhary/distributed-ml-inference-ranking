@@ -1,0 +1,12 @@
+{
+  "seed": 42,
+  "train_rows": 148842,
+  "test_rows": 118750,
+  "test_users": 5000,
+  "max_train_rows_config": 400000,
+  "max_test_users_config": 5000,
+  "batch_size": 1024,
+  "epochs": 3,
+  "feature_count": 36,
+  "device": "cpu"
+}

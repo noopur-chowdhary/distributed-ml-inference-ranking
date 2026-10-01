@@ -1,0 +1,43 @@
+services:
+
+  redis:
+    image: redis:7-alpine
+
+    command:
+      - redis-server
+      - --save
+      - ""
+      - --appendonly
+      - "no"
+
+    healthcheck:
+      test:
+        - CMD
+        - redis-cli
+        - ping
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  inference:
+    build:
+      context: .
+
+    init: true
+
+    environment:
+      RANKING_REPLICAS: "2"
+      REDIS_HOST: redis
+      REDIS_PORT: "6379"
+      REDIS_TTL_SECONDS: "300"
+
+    depends_on:
+      redis:
+        condition: service_healthy
+
+    ports:
+      - "8000:8000"
+
+    shm_size: "2gb"
+
+    stop_grace_period: 30s

@@ -1,0 +1,14 @@
+stage,metric,value
+Ranking,selected_ranker,HistGradientBoosting
+Ranking,NDCG@10,0.9615779745970517
+Ranking,Recall@10,0.9404777733368014
+Retrieval,raw_recall@50,0.6493463337149712
+Retrieval,raw_recall@100,0.7023322220106668
+Retrieval,raw_recall@200,0.7413251020764303
+Retrieval,catalog_recall@50,0.6817392990867963
+Retrieval,catalog_recall@100,0.7375034674403288
+Retrieval,catalog_recall@200,0.7787167258702131
+Retrieval,repeat_recall@200,0.9996790472599296
+Retrieval,new_recall@200,0.4913588837022676
+Retrieval,catalog_coverage,0.950984499371596
+Retrieval,avg_candidates_per_user,200.0

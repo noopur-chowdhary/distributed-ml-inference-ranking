@@ -1,0 +1,34 @@
+{
+  "cutoff_time": 5288,
+  "history_quantile": 0.85,
+  "evaluation_users": 2000,
+  "svd_users": 50000,
+  "svd_streamers": 60000,
+  "svd_components": 32,
+  "max_candidates": 200,
+  "candidate_rows": 400000,
+  "catalog_coverage": 0.9509844993715961,
+  "generation_seconds": 2.9946617080131546,
+  "source_weights": {
+    "history": 1.0,
+    "svd": 1.0,
+    "popularity": 0.55
+  },
+  "candidate_metrics": {
+    "raw_recall@50": 0.6493463337149712,
+    "catalog_recall@50": 0.6817392990867963,
+    "repeat_recall@50": 0.9761265683356677,
+    "new_recall@50": 0.28035678456044716,
+    "raw_recall@100": 0.7023322220106668,
+    "catalog_recall@100": 0.7375034674403288,
+    "repeat_recall@100": 0.9972625000102022,
+    "new_recall@100": 0.39326309877395094,
+    "raw_recall@200": 0.7413251020764303,
+    "catalog_recall@200": 0.7787167258702131,
+    "repeat_recall@200": 0.9996790472599296,
+    "new_recall@200": 0.4913588837022676,
+    "catalog_coverage": 0.9509844993715961,
+    "users_evaluated": 2000.0,
+    "avg_candidates_per_user": 200.0
+  }
+}

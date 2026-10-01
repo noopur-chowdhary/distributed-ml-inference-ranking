@@ -1,0 +1,4 @@
+workload,requests,failures,p50_ms,p95_ms,p99_ms,avg_ms,min_ms,max_ms,current_rps
+broad_user,129,0,21,62,190,28.27,13,197,9.3
+hot_user,574,0,3,19,78,6.56,2,181,41.5
+aggregated,703,0,4,34,110,10.55,2,197,50.8

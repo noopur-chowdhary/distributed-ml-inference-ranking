@@ -1,0 +1,54 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE/editor
+.vscode/
+.idea/
+
+# Environment/secrets
+.env
+.env.*
+!.env.example
+
+# Raw datasets
+data/raw/
+
+# Duplicate/archive files
+*.zip
+
+# Locust temporary output
+*.log
+
+# Ray runtime files
+/tmp/ray/
+ray_results/
+
+# Misc
+.coverage
+htmlcov/
+
+# Large/generated exploratory tables
+results/01_twitch_data_exploration/tables/df.csv
+results/01_twitch_data_exploration/tables/user_streamer_counts.csv
+
+# Duplicate processed data stored under notebook workspace
+notebooks/Distributed ML Inference & Ranking/data/
+
+# Result archives
+results/*.zip
